@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.testdemo.activity.MainActivity">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <!--<TextView-->
+            <!--android:textColor="#c5c5c5"-->
+            <!--android:text="账号"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:id="@+id/textView" />-->
+            <EditText
+                android:id="@+id/et_admin"
+                android:hint="请输入账号"
+                android:textColorHint="#c5c5c5"
+                android:layout_weight="6"
+                android:background="@null"
+                android:textCursorDrawable="@null"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:text="test"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/name"
+                />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5b5b5"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_password"
+                android:hint="请输入密码"
+                android:textColorHint="#c5c5c5"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:text="1"
+                android:textCursorDrawable="@null"
+                android:maxLines="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/password"
+                />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5b5b5"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="14dp"
+            android:text="登 录"
+            android:background="@drawable/button_shape"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
